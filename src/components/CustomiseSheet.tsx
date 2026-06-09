@@ -24,12 +24,7 @@ export default function CustomiseSheet({ item, onConfirm, onClose }: Props) {
   return (
     <>
       <div className="fixed inset-0 bg-black/30 backdrop-blur-sm z-[80]" onClick={onClose} />
-      <div className="fixed z-[90]
-  bottom-0 left-0 right-0
-  md:bottom-auto md:right-auto md:left-1/2 md:top-1/2
-  md:-translate-x-1/2 md:-translate-y-1/2 md:w-[480px]
-  bg-white rounded-t-3xl md:rounded-2xl
-  shadow-2xl flex flex-col max-h-[85vh] animate-slideIn">
+      <div className="fixed bottom-0 inset-x-0 md:inset-auto md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-[480px] bg-white rounded-t-3xl md:rounded-2xl z-[90] shadow-2xl flex flex-col max-h-[85vh] animate-slideIn">
 
         {/* drag handle (mobile) */}
         <div className="md:hidden flex justify-center pt-3 pb-1">

@@ -10,7 +10,7 @@ import HowItWorks    from "./components/HowItWorks";
 import About         from "./components/About";
 import CartDrawer    from "./components/CartDrawer";
 import CheckoutModal from "./components/CheckoutModal";
-// import FloatingBar   from "./components/FloatingBar";
+import FloatingBar   from "./components/FloatingBar";
 import Cta           from "./components/Cta";
 import Footer        from "./components/Footer";
 
@@ -61,7 +61,7 @@ export default function App() {
           <About />
           <Cta />
           <Footer />
-         
+          <FloatingBar cart={cart} onClick={() => setCartOpen(true)} />
           <CartDrawer
             cart={cart} open={cartOpen}
             onClose={() => setCartOpen(false)}
